@@ -1,0 +1,37 @@
+$f12:12px;
+$f14:14px;
+$f16:16px;
+$c9:#999;
+$dc:#DC0F50;
+$fontc:#333333;
+
+.ct_footer{
+    margin-bottom:26px;
+    .container{
+        .warrant{
+            li{float:left;padding-left:82px;padding-right:24px;border-right:1px solid #ccc;
+                // 承诺保证部分精力图坐标
+                @for $i from 0 to 5{&:nth-child(#{$i+1}){background:url("../images/warrant_icon.png") no-repeat 15px -55px*$i;}}
+            b{display:block;font-size:$f14;font-weight:normal;padding:11px 0 7px;line-height:$f14;}
+            i{display:block;font-size:$f12;line-height:$f12;padding-bottom:10px;color:$c9;}}
+            .last{border:none;}}
+        .links{
+                padding-top:52px;
+                dl{
+                    float:left;margin:0 70px 0 34px;
+                    dt{font-size:$f16;margin-bottom:6px;font-weight:bold;a{color:#666;}}
+                    dd{font-size:$f12;line-height:20px;a{color:$c9;}}
+                    a{&:hover{color:$dc;}}}}
+        .hd{
+            padding-top:52px;
+            li{
+                font-size:$f12;line-height:32px;width:76px;float:left;margin-left:33px;color:$c9;font-weight:bold;
+                img{height:76px;}}}
+        .hd+p{padding-left:70px;float:left;color:$fontc;background:url("../images/mobile.png") no-repeat 30px center;color:#666;b{display:block;font-size:$f16;padding-top:5px;line-height:24px;}i{font-size:$f12;}}
+    }
+}
+.ct_foot{
+    padding:10px 0;background:$fontc;
+    p{font-size:$f12;line-height:26px;color:$c9;
+        a{color:$c9;&:hover{color:#fff;}}}
+}

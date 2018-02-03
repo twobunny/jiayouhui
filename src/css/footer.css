@@ -1,0 +1,53 @@
+.ct_footer { margin-bottom: 26px; }
+
+.ct_footer .container .warrant li { float: left; padding-left: 82px; padding-right: 24px; border-right: 1px solid #ccc; }
+
+.ct_footer .container .warrant li:nth-child(1) { background: url("../images/warrant_icon.png") no-repeat 15px 0px; }
+
+.ct_footer .container .warrant li:nth-child(2) { background: url("../images/warrant_icon.png") no-repeat 15px -55px; }
+
+.ct_footer .container .warrant li:nth-child(3) { background: url("../images/warrant_icon.png") no-repeat 15px -110px; }
+
+.ct_footer .container .warrant li:nth-child(4) { background: url("../images/warrant_icon.png") no-repeat 15px -165px; }
+
+.ct_footer .container .warrant li:nth-child(5) { background: url("../images/warrant_icon.png") no-repeat 15px -220px; }
+
+.ct_footer .container .warrant li b { display: block; font-size: 14px; font-weight: normal; padding: 11px 0 7px; line-height: 14px; }
+
+.ct_footer .container .warrant li i { display: block; font-size: 12px; line-height: 12px; padding-bottom: 10px; color: #999; }
+
+.ct_footer .container .warrant .last { border: none; }
+
+.ct_footer .container .links { padding-top: 52px; }
+
+.ct_footer .container .links dl { float: left; margin: 0 70px 0 34px; }
+
+.ct_footer .container .links dl dt { font-size: 16px; margin-bottom: 6px; font-weight: bold; }
+
+.ct_footer .container .links dl dt a { color: #666; }
+
+.ct_footer .container .links dl dd { font-size: 12px; line-height: 20px; }
+
+.ct_footer .container .links dl dd a { color: #999; }
+
+.ct_footer .container .links dl a:hover { color: #DC0F50; }
+
+.ct_footer .container .hd { padding-top: 52px; }
+
+.ct_footer .container .hd li { font-size: 12px; line-height: 32px; width: 76px; float: left; margin-left: 33px; color: #999; font-weight: bold; }
+
+.ct_footer .container .hd li img { height: 76px; }
+
+.ct_footer .container .hd + p { padding-left: 70px; float: left; color: #333333; background: url("../images/mobile.png") no-repeat 30px center; color: #666; }
+
+.ct_footer .container .hd + p b { display: block; font-size: 16px; padding-top: 5px; line-height: 24px; }
+
+.ct_footer .container .hd + p i { font-size: 12px; }
+
+.ct_foot { padding: 10px 0; background: #333333; }
+
+.ct_foot p { font-size: 12px; line-height: 26px; color: #999; }
+
+.ct_foot p a { color: #999; }
+
+.ct_foot p a:hover { color: #fff; }
