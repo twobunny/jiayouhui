@@ -1,3 +1,29 @@
+.wouldlike { margin-bottom: 48px; }
+
+.wouldlike .container { background: url("../images/hd_bg.jpg") repeat-x left 40px; }
+
+.wouldlike h2 { font-size: 24px; line-height: 52px; width: 104px; overflow: hidden; background: #fff; }
+
+.wouldlike .hd { overflow: hidden; position: relative; }
+
+.wouldlike .hd > a { display: block; width: 30px; height: 80px; background: url("../images/prev_bg.png") no-repeat; position: absolute; top: 50%; transform: translateY(-50%); opacity: 0.5; }
+
+.wouldlike .hd .prev { left: 0; }
+
+.wouldlike .hd .next { right: 0; background: url("../images/next_bg.png") no-repeat; }
+
+.wouldlike .hd .like { width: 10000%; height: 270px; padding: 0 25px; }
+
+.wouldlike .hd .like li { width: 200px; margin: 20px 22px 0 11px; float: left; position: relative; }
+
+.wouldlike .hd .like li img { width: 200px; }
+
+.wouldlike .hd .like li span { display: block; font-size: 12px; line-height: 20px; height: 40px; padding-top: 6px; }
+
+.wouldlike .hd .like li b { padding-top: 8px; font-size: 14px; color: #DC0F50; }
+
+.wouldlike .hd .like li del { color: #999; font-size: 12px; margin-left: 8px; font-weight: normal; }
+
 .ct_footer { margin-bottom: 26px; }
 
 .ct_footer .container .warrant li { float: left; padding-left: 82px; padding-right: 24px; border-right: 1px solid #ccc; }
@@ -38,13 +64,13 @@
 
 .ct_footer .container .hd li img { height: 76px; }
 
-.ct_footer .container .hd + p { padding-left: 70px; float: left; color: #333333; background: url("../images/mobile.png") no-repeat 30px center; color: #666; }
+.ct_footer .container .hd + p { padding-left: 70px; float: left; color: #333; background: url("../images/mobile.png") no-repeat 30px center; color: #666; }
 
 .ct_footer .container .hd + p b { display: block; font-size: 16px; padding-top: 5px; line-height: 24px; }
 
 .ct_footer .container .hd + p i { font-size: 12px; }
 
-.ct_foot { padding: 10px 0; background: #333333; }
+.ct_foot { padding: 10px 0; background: #333; }
 
 .ct_foot p { font-size: 12px; line-height: 26px; color: #999; }
 

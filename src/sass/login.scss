@@ -1,0 +1,39 @@
+$f12:12px;
+$f14:14px;
+$f16:16px;
+$dc:#DC0F50;
+$c3:#333;
+$c9:#999;
+$c6:#666;
+
+.ct_main{
+    .container{padding:62px 0 125px 0;
+        img{float:left;margin:0 170px 0 75px;}
+
+        //登录界面
+        .login{float:left;
+            //标题
+            h2{line-height:36px;font-size:18px;
+                a{color:$c6;display:inline-block;width:48%;text-align:center;
+                    .active{color:$dc;border-bottom:2px solid $dc;}
+                    span{display:inline-block;height:38px;}}}
+
+            //两种登录的公共样式
+            div{border:1px solid #ccc;padding-left:70px;height:338px;width: 376px;}
+
+            //用户登录
+            .form_user{padding-top:45px;
+                .tishi{/*display:none;*/font-size:$f12;color:$dc;height:40px;line-height:38px;padding-left:32px;background:url("../images/error_bg.png") no-repeat 9px 50%;}
+                input[type='text']{width:246px;height:40px;border:1px solid #ccc;padding-left:60px;background-position:$f12 center !important;margin-right:20px;}
+                i{display:inline-block;width: 20px;height: 20px;background:url("../images/correct_bg.png") no-repeat;}
+                #phone{margin-bottom:20px;background:url("../images/icon01.png") no-repeat;}
+                #password{background:url("../images/icon02.png") no-repeat;}
+                .help{color:$c6;font-size:$f12;line-height:32px;margin-bottom:32px;a{color:$c6;margin-right:65px;}}
+                #login{display:inline-block;width: 305px;height:40px;line-height:40px;font-size:18px;background:$dc;color:#fff;text-align:center;}
+                }
+
+            //快捷登录
+            .form_fast{display:none;}
+            }
+    }
+}

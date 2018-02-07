@@ -1,9 +1,10 @@
 $f12:12px;
 $f14:14px;
 $f16:16px;
-$c9:#999;
 $dc:#DC0F50;
-$fontc:#333333;
+$c3:#333;
+$c9:#999;
+$c6:#666;
 
 .ct_footer{
     margin-bottom:26px;
@@ -19,7 +20,7 @@ $fontc:#333333;
                 padding-top:52px;
                 dl{
                     float:left;margin:0 70px 0 34px;
-                    dt{font-size:$f16;margin-bottom:6px;font-weight:bold;a{color:#666;}}
+                    dt{font-size:$f16;margin-bottom:6px;font-weight:bold;a{color:$c6;}}
                     dd{font-size:$f12;line-height:20px;a{color:$c9;}}
                     a{&:hover{color:$dc;}}}}
         .hd{
@@ -27,7 +28,7 @@ $fontc:#333333;
             li{
                 font-size:$f12;line-height:32px;width:76px;float:left;margin-left:33px;color:$c9;font-weight:bold;
                 img{height:76px;}}}
-        .hd+p{padding-left:70px;float:left;color:$fontc;background:url("../images/mobile.png") no-repeat 30px center;color:#666;b{display:block;font-size:$f16;padding-top:5px;line-height:24px;}i{font-size:$f12;}}
+        .hd+p{padding-left:70px;float:left;color:$fontc;background:url("../images/mobile.png") no-repeat 30px center;color:$c6;b{display:block;font-size:$f16;padding-top:5px;line-height:24px;}i{font-size:$f12;}}
     }
 }
 .ct_foot{

@@ -1,0 +1,67 @@
+.ct_main { color: #333; }
+
+.ct_main .container { position: relative; }
+
+.ct_main .container a { color: #333; }
+
+.ct_main .container h2 { padding-top: 20px; font-size: 12px; line-height: 26px; }
+
+.ct_main .container .d1 { border: 1px solid #e5e5e5; width: 955px; overflow: hidden; position: relative; }
+
+.ct_main .container .d1 dt { width: 91px; padding-left: 10px; font-size: 14px; font-weight: bold; color: #444; float: left; background: #e5e5e5; height: 100%; line-height: 60px; }
+
+.ct_main .container .d1 dd { height: 58px; float: left; }
+
+.ct_main .container .d1 dd a:first-child { margin: 23px 18px 23px 17px; }
+
+.ct_main .container .d1 dd a { float: left; font-size: 12px; margin-left: 28px; color: #444; }
+
+.ct_main .container .d1 .more { position: absolute; right: 16px; top: 24px; }
+
+.ct_main .container .cate { border-bottom: 1px dashed #e5e5e5; }
+
+.ct_main .container .brand { border-top: none; }
+
+.ct_main .container .chose { margin-top: 18px; background: #e5e5e5; }
+
+.ct_main .container .chose li { height: 46px; line-height: 45px; margin-top: 1px; width: 88px; float: left; text-align: center; font-size: 12px; }
+
+.ct_main .container .chose li i { display: inline-block; width: 10px; height: 11px; background: url("../images/filter_i_bg.png") no-repeat; margin-left: 4px; position: relative; top: 1px; }
+
+.ct_main .container .chose .active { background: #fff; border-left: 1px solid #e5e5e5; border-right: 1px solid #e5e5e5; color: #DC0F50; }
+
+.ct_main .container .chose .last { width: 200px; background: #fff; }
+
+.ct_main .container .chose .last input { width: 48px; border: 1px solid #d6d6d6; height: 12px; padding: 5px 2px; }
+
+.ct_main .container .chose .last a { display: inline-block; width: 48px; height: 24px; line-height: 24px; background: #DC0F50; color: #fff; vertical-align: middle; margin-left: 10px; }
+
+.ct_main .goods { padding-top: 30px; width: 955px; }
+
+.ct_main .goods li { float: left; margin-left: 20px; width: 214px; margin-bottom: 30px; }
+
+.ct_main .goods li img { width: 214px; }
+
+.ct_main .goods li p { font-size: 14px; }
+
+.ct_main .goods li p:first-of-type { height: 40px; line-height: 20px; padding: 5px 0; }
+
+.ct_main .goods li .sale { font-size: 16px; color: #DC0F50; font-weight: bold; }
+
+.ct_main .goods li .price { float: right; color: #999; }
+
+.ct_main .bestsale { position: absolute; right: 0; top: 0; width: 234px; background: url("../images/hd_bg.jpg") repeat-x left 45px; }
+
+.ct_main .bestsale h2 { background: #fff; overflow: hidden; width: 110px; font-size: 20px; }
+
+.ct_main .bestsale ul { padding-top: 8px; }
+
+.ct_main .bestsale ul li { padding: 9px 0; border-bottom: 1px solid #e5e5e5; position: relative; padding-left: 97px; }
+
+.ct_main .bestsale ul li i { display: block; width: 25px; height: 25px; background: url("../images/biao_bg.png") no-repeat; position: absolute; left: 0; top: 10px; z-index: 100; line-height: 18px; padding-left: 5px; font-size: 12px; color: #fff; }
+
+.ct_main .bestsale ul li img { width: 80px; position: absolute; left: 0; top: 0; }
+
+.ct_main .bestsale ul li span { display: block; font-size: 14px; line-height: 16px; height: 54px; }
+
+.ct_main .bestsale ul li em { font-size: 20px; color: #DC0F50; }

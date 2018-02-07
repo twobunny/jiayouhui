@@ -1,0 +1,51 @@
+$f12:12px;
+$f14:14px;
+$f16:16px;
+$dc:#DC0F50;
+$c3:#333;
+$c6:#666;
+$c9:#999;
+$c5:#e5e5e5;
+.ct_main{
+    .container{margin-bottom:88px;border:1px solid $c5;}
+    .detail{padding:29px;border-bottom:1px solid $c5;margin-bottom:10px;}
+    .l_box{width:545px;height:512px;
+        .small{width:64px;float:left;
+             a{display: block;height: 9px;background: url(../images/up_down.png) no-repeat center top;cursor: pointer;}
+             .next{background-position:center -30px;}
+            .hd{height: 444px;overflow:hidden;width:64px;ul{li{img{display:block;width:64px;}height: 64px;padding: 5px 0;cursor: pointer;}}}}
+        .big{float:right;position:relative;img{display:block;width:460px;height:460px;}span{height: 20px;line-height: 19px;padding-left: 26px;background: url(../images/icon_1.png) no-repeat 0 -59px;cursor: pointer;color: #666;position:absolute;bottom:-36px;left:50%;margin-left:-27px;}}}
+    .r_box{width:550px;
+        h3{color:$c3;font-size:20px;height:54px;line-height:30px;padding:7px 0;border-bottom:1px solid #d6d6d6;}
+        .price{line-height:35px;position:relative;
+            b{color:$dc;font-size:30px;margin-right:8px;font-weight:normal;}
+            em{display:block;color:$c6;line-height:16px;font-size:18px;}
+            a{position:absolute;color:$dc;font-size:$f14;line-height:$f14;top:25px;right:27px;}
+            }
+        .num{font-weight:normal;height:40px;line-height:40px;margin-top:10px;font-size:$f12;color:$c6;}
+        .chu{height:40px;line-height:40px;font-size:$f12;color:$c6;b{width:50px;margin-right:15px;font-weight:normal;}}
+        .buy{font-size:12px;line-height:22px;
+                b{float:left;font-weight:normal;i{color:$dc;}}
+                a{display:block;width: 15px;height: 20px;float:left;background: url("../images/jia_jian.png") no-repeat;}
+                .add{background-position: 0 -20px;}
+                span{border:1px solid #d6d5d3;float:left;margin:0 10px;}
+                input{width:44px;padding:0 5px;border-left:1px solid #d6d5d3;float:left;text-align:center;line-height:20px;height:20px;color:$c6;font-size:$f12;border-right:1px solid #d6d5d3;}}
+        .server{padding-top:7px;line-height:20px;font-size:$f14;color:$c3;
+            span{display:block;float:left;padding-left:25px;margin:0px 0 8px 0;margin-right:26px;background:url("http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29cd6/85e5d25c92b84e659a9bb0f112aa060f.png") no-repeat left top;background-size: 20px auto;}}
+        .btn{
+            a{display:inline-block;text-align:center;width:160px;height:38px;margin-right:5px;font-size:16px;line-height:38px;color:#fff;}
+            #addcar{background:#fea829;}
+            #buy{background:$dc;}
+            }
+        }
+    
+    .content{
+        .des{height:50px;
+            li{float:left;width:160px;height:50px;line-height:50px;background:#f5f5f5;text-align:center;font-size:18px;color:$c3;}
+            .active{background: #fff;color: #dc0f50;border-top: 2px solid #dc0f50;position: relative;top:-1px;border-left:1px solid $c5;border-right: 1px solid $c5;width:159px;border-bottom:1px solid #fff;margin-left: -1px;}}
+        .hd{border-top:1px solid $c5;}
+        .guige{padding:40px;min-height:440px;font-size:$f12;color:$c6;line-height:40px;
+            b{width:110px;display:inline-block;font-weight:normal;}
+            span{display:inline-block;}}
+        }
+}

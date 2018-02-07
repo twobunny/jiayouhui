@@ -1,0 +1,40 @@
+$f12:12px;
+$f14:14px;
+$f16:16px;
+$dc:#DC0F50;
+$c3:#333;
+$c6:#666;
+$c9:#999;
+$c5:#e5e5e5;
+
+.ct_main{
+    .container{
+        .car{padding:56px 0 63px;color:$c3;a{color:$c3;}
+            .goods{font-size:$f12;border:1px solid $c5;border-collapse:collapse;width:100%;
+                th{font-weight:normal;line-height:42px;height:42px;background:$c5;}
+                th:first-child{padding-left:22px;width:70px;}
+                tr{border-bottom:1px solid $c5;}
+                th:last-child{width:102px;}
+                td{text-align:center;img{width:82px;margin-right:10px;}}
+                td:first-child{padding-left:22px;}
+                td:nth-child(2){width:90px;}
+                td:nth-child(3){text-align:left;}
+                .sum{color:$dc;}
+                .num{width:150px;
+                    span{border:1px solid #d6d5d3;display:inline-block;}
+                    a{display:block;width: 15px;height:20px;float:left;}
+                    input{width:44px;padding:0 5px;border-left:1px solid #d6d5d3;float:left;text-align:center;line-height:20px;height:20px;color:$c6;font-size:$f12;border-right:1px solid #d6d5d3;}
+                    i{color:$dc;}}
+                }}
+        .jiesuan{color:$c3;padding-top:22px;font-size:$f12;position:relative;height:52px;line-height:52px;position:relative;
+            label{width:60px;}
+            #del{margin-left:20px;}
+            p{float:right;margin-right:140px;
+                span{font-size:18px;color:#ccc;display:inline-block;margin-top:15px;}
+                i{color:$dc;}
+                #money{font-size:26px;font-weight:bold;}
+                b{width:50px;display:inline-block;}}
+            .btnsub{display:block;font-size:18px;background:$dc;color:#fff;width:120px;height:50px;line-height:50px;text-align:center;position:absolute;right:0;bottom:0;}
+        }
+    }
+}

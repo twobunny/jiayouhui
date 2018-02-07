@@ -1,0 +1,51 @@
+$f12:12px;
+$f14:14px;
+$f16:16px;
+$dc:#DC0F50;
+$c3:#333;
+$c6:#666;
+$c9:#999;
+$c5:#e5e5e5;
+
+.ct_main{color:$c3;
+    .container{position:relative;a{color:$c3;}
+        h2{padding-top:20px;font-size:$f12;line-height:26px;}
+        .d1{border:1px solid #e5e5e5;width:955px;overflow:hidden;position:relative;
+            dt{width:91px;padding-left:10px;font-size:$f14;font-weight:bold;color:#444;float:left;background:$c5;height:100%;line-height:60px;}
+            dd{height:58px;float:left;
+                a:first-child{margin:23px 18px 23px 17px;}
+                a{float:left;font-size:$f12;margin-left:28px;color:#444;}}
+            .more{position:absolute;right:16px;top:24px;}
+        }
+        //两种分类形式
+        .cate{border-bottom:1px dashed #e5e5e5;}
+        .brand{border-top:none;}
+        //选项过滤
+        .chose{margin-top:18px;background:$c5;
+            li{height:46px;line-height:45px;margin-top:1px;width:88px;float:left;text-align:center;font-size:$f12; i{display:inline-block;width:10px;height:11px;background:url("../images/filter_i_bg.png") no-repeat;margin-left:4px;position:relative;top:1px;}}
+            .active{background:#fff;border-left:1px solid $c5;border-right:1px solid $c5;color:$dc;}
+            .last{width:200px;background:#fff;
+                input{width:48px;border:1px solid #d6d6d6;height:12px;padding:5px 2px;}
+                a{display:inline-block;width:48px;height:24px;line-height:24px;background:$dc;color:#fff;vertical-align:middle;margin-left:10px;}}}}
+        //商品列表
+        .goods{padding-top:30px;width:955px;
+            li{float:left;margin-left:20px;width:214px;margin-bottom:30px;
+                img{width:214px;}
+                p{font-size:$f14;}
+                p:first-of-type{height:40px;line-height:20px;padding:5px 0;}
+                .sale{font-size:16px;color:$dc;font-weight:bold;}
+                .price{float:right;color:$c9;}}
+        }
+
+        //热销推荐
+        .bestsale{position:absolute;right:0;top:0;width:234px;background:url("../images/hd_bg.jpg") repeat-x left 45px;
+                h2{background:#fff;overflow:hidden;width:110px;font-size:20px;}
+                ul{padding-top:8px;
+                    li{padding:9px 0;border-bottom:1px solid #e5e5e5;position:relative;padding-left:97px;
+                        i{display:block;width:25px;height:25px;background:url("../images/biao_bg.png") no-repeat;position:absolute;left:0;top:10px;z-index:100;line-height: 18px;padding-left: 5px;font-size:$f12;color: #fff;}
+                        img{width:80px;position:absolute;left:0;top:0;}
+                        span{display:block;font-size:14px;line-height:16px;height:54px;}
+                        em{font-size:20px;color:$dc;}}}
+        }
+
+} 

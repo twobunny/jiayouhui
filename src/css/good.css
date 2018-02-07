@@ -1,0 +1,79 @@
+.ct_main .container { margin-bottom: 88px; border: 1px solid #e5e5e5; }
+
+.ct_main .detail { padding: 29px; border-bottom: 1px solid #e5e5e5; margin-bottom: 10px; }
+
+.ct_main .l_box { width: 545px; height: 512px; }
+
+.ct_main .l_box .small { width: 64px; float: left; }
+
+.ct_main .l_box .small a { display: block; height: 9px; background: url(../images/up_down.png) no-repeat center top; cursor: pointer; }
+
+.ct_main .l_box .small .next { background-position: center -30px; }
+
+.ct_main .l_box .small .hd { height: 444px; overflow: hidden; width: 64px; }
+
+.ct_main .l_box .small .hd ul li { height: 64px; padding: 5px 0; cursor: pointer; }
+
+.ct_main .l_box .small .hd ul li img { display: block; width: 64px; }
+
+.ct_main .l_box .big { float: right; position: relative; }
+
+.ct_main .l_box .big img { display: block; width: 460px; height: 460px; }
+
+.ct_main .l_box .big span { height: 20px; line-height: 19px; padding-left: 26px; background: url(../images/icon_1.png) no-repeat 0 -59px; cursor: pointer; color: #666; position: absolute; bottom: -36px; left: 50%; margin-left: -27px; }
+
+.ct_main .r_box { width: 550px; }
+
+.ct_main .r_box h3 { color: #333; font-size: 20px; height: 54px; line-height: 30px; padding: 7px 0; border-bottom: 1px solid #d6d6d6; }
+
+.ct_main .r_box .price { line-height: 35px; position: relative; }
+
+.ct_main .r_box .price b { color: #DC0F50; font-size: 30px; margin-right: 8px; font-weight: normal; }
+
+.ct_main .r_box .price em { display: block; color: #666; line-height: 16px; font-size: 18px; }
+
+.ct_main .r_box .price a { position: absolute; color: #DC0F50; font-size: 14px; line-height: 14px; top: 25px; right: 27px; }
+
+.ct_main .r_box .num { font-weight: normal; height: 40px; line-height: 40px; margin-top: 10px; font-size: 12px; color: #666; }
+
+.ct_main .r_box .chu { height: 40px; line-height: 40px; font-size: 12px; color: #666; }
+
+.ct_main .r_box .chu b { width: 50px; margin-right: 15px; font-weight: normal; }
+
+.ct_main .r_box .buy { font-size: 12px; line-height: 22px; }
+
+.ct_main .r_box .buy b { float: left; font-weight: normal; }
+
+.ct_main .r_box .buy b i { color: #DC0F50; }
+
+.ct_main .r_box .buy a { display: block; width: 15px; height: 20px; float: left; background: url("../images/jia_jian.png") no-repeat; }
+
+.ct_main .r_box .buy .add { background-position: 0 -20px; }
+
+.ct_main .r_box .buy span { border: 1px solid #d6d5d3; float: left; margin: 0 10px; }
+
+.ct_main .r_box .buy input { width: 44px; padding: 0 5px; border-left: 1px solid #d6d5d3; float: left; text-align: center; line-height: 20px; height: 20px; color: #666; font-size: 12px; border-right: 1px solid #d6d5d3; }
+
+.ct_main .r_box .server { padding-top: 7px; line-height: 20px; font-size: 14px; color: #333; }
+
+.ct_main .r_box .server span { display: block; float: left; padding-left: 25px; margin: 0px 0 8px 0; margin-right: 26px; background: url("http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29cd6/85e5d25c92b84e659a9bb0f112aa060f.png") no-repeat left top; background-size: 20px auto; }
+
+.ct_main .r_box .btn a { display: inline-block; text-align: center; width: 160px; height: 38px; margin-right: 5px; font-size: 16px; line-height: 38px; color: #fff; }
+
+.ct_main .r_box .btn #addcar { background: #fea829; }
+
+.ct_main .r_box .btn #buy { background: #DC0F50; }
+
+.ct_main .content .des { height: 50px; }
+
+.ct_main .content .des li { float: left; width: 160px; height: 50px; line-height: 50px; background: #f5f5f5; text-align: center; font-size: 18px; color: #333; }
+
+.ct_main .content .des .active { background: #fff; color: #dc0f50; border-top: 2px solid #dc0f50; position: relative; top: -1px; border-left: 1px solid #e5e5e5; border-right: 1px solid #e5e5e5; width: 159px; border-bottom: 1px solid #fff; margin-left: -1px; }
+
+.ct_main .content .hd { border-top: 1px solid #e5e5e5; }
+
+.ct_main .content .guige { padding: 40px; min-height: 440px; font-size: 12px; color: #666; line-height: 40px; }
+
+.ct_main .content .guige b { width: 110px; display: inline-block; font-weight: normal; }
+
+.ct_main .content .guige span { display: inline-block; }

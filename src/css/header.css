@@ -4,13 +4,31 @@
 
 #ct_header .wrap-top p { line-height: 30px; text-align: right; }
 
-#ct_header .wrap-top p span { font-size: 12px; color: #666; }
+#ct_header .wrap-top p span { font-size: 12px; color: #666; margin: 0 8px; }
 
-#ct_header .wrap-top p a { color: #666; margin: 0 3px; font-size: 12px; }
+#ct_header .wrap-top p span a { color: #DC0F50; }
 
-#ct_header .wrap-top p a:hover { text-decoration: underline; color: red; }
+#ct_header .wrap-top p > a { color: #666; margin: 0 8px; font-size: 12px; }
 
-#ct_header .top { padding-top: 32px; }
+#ct_header .wrap-top p > a:hover { text-decoration: underline; color: red; }
+
+#ct_header .wrap-top p > a strong { position: absolute; left: -75px; top: 23px; z-index: 1000; padding: 14px; padding-bottom: 0; border: 1px solid #E5E5E5; display: none; background: #fff; text-align: center; font-weight: normal; }
+
+#ct_header .wrap-top p > a strong i { position: absolute; display: block; width: 14px; height: 11px; background: url("../images/ware_list.png") no-repeat; top: -11px; right: 50px; }
+
+#ct_header .wrap-top p > a strong img { width: 121px; }
+
+#ct_header .wrap-top p > a strong em { display: block; font-size: 16px; line-height: 44px; color: #333; }
+
+#ct_header .wrap-top p .ph { background: url("../images/iphone.png") no-repeat left center; padding-left: 14px; position: relative; }
+
+#ct_header .wrap-top p .ph:hover strong { display: block; }
+
+#ct_header .wrap-top p .we { background: url("../images/wx.png") no-repeat left center; padding-left: 16px; position: relative; }
+
+#ct_header .wrap-top p .we:hover strong { display: block; }
+
+#ct_header .top { padding-top: 32px; position: relative; }
 
 #ct_header .top h1 { text-indent: -1000px; background: url("../images/logo1.png") no-repeat; width: 240px; height: 44px; float: left; margin-right: 116px; }
 
@@ -28,24 +46,50 @@
 
 #ct_header .top .form p .active { color: #DC0F50; }
 
-#ct_header .top .gou { display: block; float: right; margin-right: 72px; border: 1px solid #ccc; line-height: 40px; padding-left: 42px; width: 80px; font-size: 14px; background: url("../images/car_icon.png") no-repeat 10px center; position: relative; }
+#ct_header .top .gou { display: block; float: right; margin-right: 72px; border: 1px solid #ccc; line-height: 40px; padding-left: 42px; width: 80px; font-size: 14px; background: url("../images/car_icon.png") no-repeat 10px center; position: relative; color: #333; }
+
+#ct_header .top .gou:hover + #mycar { display: block; }
 
 #ct_header .top .gou .qty { display: block; background: #DC0F50; border-radius: 8px; width: 18px; height: 18px; position: absolute; right: -9px; top: -9px; font-size: 12px; color: #fff; text-align: center; line-height: 18px; }
+
+#ct_header .top #mycar { position: absolute; right: 72px; top: 77px; background: #fff; border: 1px solid #ccc; min-width: 300px; display: none; }
+
+#ct_header .top #mycar:hover { display: block; }
+
+#ct_header .top #mycar h2 { height: 20px; line-height: 20px; font-size: 16px; font-weight: bold; color: #333; padding: 10px; }
+
+#ct_header .top #mycar i { position: absolute; display: block; width: 14px; height: 11px; background: url("../images/ware_list.png") no-repeat; top: -11px; right: 50px; }
+
+#ct_header .top #mycar ul { min-height: 250px; }
+
+#ct_header .top #mycar div { background: #E5E5E5; padding: 5px 12px; }
+
+#ct_header .top #mycar div p { display: inline-block; font-size: 12px; }
+
+#ct_header .top #mycar div p em { display: block; line-height: 20px; }
+
+#ct_header .top #mycar div p b { margin: 0 3px; }
+
+#ct_header .top #mycar div span { margin-top: 6px; background: #DC0F50; }
+
+#ct_header .top #mycar div span a { color: #fff; display: inline-block; width: 90px; height: 30px; line-height: 30px; font-size: 14px; text-align: center; }
 
 #ct_header .ct_nav { padding-top: 30px; }
 
 #ct_header .ct_nav .tab1 { position: relative; }
 
+#ct_header .ct_nav .tab1 > li:first-child { padding-left: 0; }
+
 #ct_header .ct_nav .tab1 > li { float: left; padding: 0 16px 0 24px; }
 
-#ct_header .ct_nav .tab1 > li .tab2 { width: 230px; height: 560px; border: 1px solid #ccc; border-top: none; position: absolute; top: 42px; left: 24px; }
+#ct_header .ct_nav .tab1 > li .tab2 { width: 230px; height: 560px; border: 1px solid #ccc; border-top: none; position: absolute; top: 44px; left: 0; }
 
 #ct_header .ct_nav .tab1 > li .tab2 li a { padding-left: 20px; font-size: 12px; display: block; line-height: 40px; height: 40px; }
 
 #ct_header .ct_nav .tab1 > li .tab2 li a:hover { color: #fff; background: #DC0F50; }
 
-#ct_header .ct_nav .tab1 > li h2 { background: #333333; height: 40px; width: 232px; line-height: 40px; color: #fff; margin-right: 38px; text-indent: 20px; font-weight: bold; font-size: 14px; }
+#ct_header .ct_nav .tab1 > li h2 { background: #333; height: 40px; width: 232px; line-height: 40px; color: #fff; margin-right: 38px; text-indent: 20px; font-weight: bold; font-size: 14px; }
 
-#ct_header .ct_nav .tab1 > li a { display: block; line-height: 40px; height: 40px; color: #333333; }
+#ct_header .ct_nav .tab1 > li a { display: block; line-height: 40px; height: 40px; color: #333; }
 
 #ct_header .ct_nav .tab1 > li a:hover { color: #DC0F50; }

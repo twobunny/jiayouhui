@@ -1,0 +1,25 @@
+.ct_main .container { padding: 80px 0 100px; }
+
+.ct_main .container ul li { margin-bottom: 18px; font-size: 12px; }
+
+.ct_main .container ul li label { display: inline-block; width: 160px; text-align: right; font-size: 14px; color: #666; margin-right: 12px; }
+
+.ct_main .container ul li label b { color: #DC0F50; }
+
+.ct_main .container ul li input[type=text] { border: 1px solid #DC0F50; width: 304px; height: 12px; padding: 14px 12px; margin-right: 14px; }
+
+.ct_main .container ul li #imgcode, .ct_main .container ul li #code { width: 180px; border-color: #999; }
+
+.ct_main .container ul li #imgcode + i, .ct_main .container ul li #code + i { display: inline-block; width: 110px; background: #DC0F50; color: #fff; height: 40px; line-height: 40px; text-align: center; }
+
+.ct_main .container ul li input + span { background: url("../images/error_bg.png") no-repeat 5px center; padding: 22px; color: #DC0F50; }
+
+.ct_main .container ul li #red { margin-left: 122px; }
+
+.ct_main .container ul li #red + label { width: auto; vertical-align: middle; font-size: 12px; }
+
+.ct_main .container ul li #btn_sign { display: inline-block; width: 304px; height: 40px; line-height: 40px; text-align: center; color: #fff; background: #DC0F50; font-size: 16px; font-weight: bold; margin-left: 200px; }
+
+.ct_main .container ul .last { text-align: right; }
+
+.ct_main .container ul .last a { text-decoration: underline; color: #666; margin-right: 175px; font-size: 14px; font-weight: bold; }
