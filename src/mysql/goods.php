@@ -1,26 +1,29 @@
 <?php
     require("connect.php");
      //获取前端数据
-    $catagory=isset($_GET["catagory"]) ?  $_GET["catagory"]:'';
+    $category=isset($_GET["category"]) ?  $_GET["category"]:'';
     $page=isset($_GET["page"]) ?  $_GET["page"]:1;
-    $qty=50;
-
-    $sql="select * from goods where catagory='$catagory'";
-
+    $qty=20;
+    $sql="select * from goods";
+    if($category!=''){
+        $sql.=" where category='$category'";
+    }
     //获取查询结果
     $result=$conn->query($sql);
 
-    if($result->num_rows>0){
+    $row=$result->fetch_all(MYSQLI_ASSOC);
 
-       $result=json_decode($result);
+
+    if(count($row)>0){
        //根据分页获取数据
        $res=array(
-            'data'=>array.slice($result,($page-1)*$qty,$qty),
-            'total'=>count($result),
+            'data'=>array_slice($row,($page-1)*$qty,$qty),
+            'total'=>count($row),
             'qty'=>$qty,
             'page'=>$page*1,
-        )
-        echo json_encode($res,JSON_UNESCAPED_UNICODE);
+        );
+       echo json_encode($res,JSON_UNESCAPED_UNICODE);
+        // print_r json_encode($res,JSON_UNESCAPED_UNICODE);
     }else{
         echo 'fail';
     }

@@ -12,6 +12,7 @@ require(['jquery','common'],function($){
         $('input[type=text]').nextAll('span').css({visibility:'hidden'});
         $('input[type=password]').nextAll('span').css({visibility:'hidden'});
         var countreg=0;
+
         //验证手机号
         $('#phone').on('blur',function(){
             if(!/^[\d]{11}$/.test($(this).val())){
@@ -21,6 +22,7 @@ require(['jquery','common'],function($){
                 countreg++;
                 $(this).nextAll('span').css({visibility:'hidden'});
             }});
+
         //验证图片验证码
         $('#imgcode').on('blur',function(){
             if(!/^1234$/.test($(this).val())){
@@ -30,6 +32,7 @@ require(['jquery','common'],function($){
                 countreg++;
                 $(this).nextAll('span').css({visibility:'hidden'});
             }});
+
         //验证密码
         $('#psw').on('blur',function(){
             if(!/^[\S]{6,16}$/.test($(this).val())){
@@ -39,6 +42,7 @@ require(['jquery','common'],function($){
                 countreg++;
                 $(this).nextAll('span').css({visibility:'hidden'});
             }});
+
         //验证错误密码
          $('#repsw').on('blur',function(){
             if($(this).val()===$('#psw')){
@@ -51,18 +55,22 @@ require(['jquery','common'],function($){
 
                 $(this).nextAll('span').css({visibility:'hidden'});
             }});
+
          //随机验证码
          $('#code').next().on('click',function(){
             $('#code').val(randomNumber(1000,9999));
          });
+         
          //同一个事件源触发两次事件
-         $('#red').on('mouseup',function(e){
+         $('#red').on('change',function(e){
+            e.preventDefault();
             console.log(e.target)
             if($(this).prop("checked")===true){
                 $("#btn_sign").prop({"disabled":false});
             }else{
                 $("#btn_sign").prop({"disabled":false});
             }
+            return false;
          });
 
          $("#btn_sign").on('mouseup',function(){

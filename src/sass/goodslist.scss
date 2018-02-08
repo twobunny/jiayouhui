@@ -29,12 +29,17 @@ $c5:#e5e5e5;
                 a{display:inline-block;width:48px;height:24px;line-height:24px;background:$dc;color:#fff;vertical-align:middle;margin-left:10px;}}}}
         //商品列表
         .goods{padding-top:30px;width:955px;
-            li{float:left;margin-left:20px;width:214px;margin-bottom:30px;
+            li{float:left;margin-left:20px;width:214px;margin-bottom:30px;&:hover{cursor:pointer;}
                 img{width:214px;}
                 p{font-size:$f14;}
                 p:first-of-type{height:40px;line-height:20px;padding:5px 0;}
                 .sale{font-size:16px;color:$dc;font-weight:bold;}
                 .price{float:right;color:$c9;}}
+        }
+        //页码样式
+        .page{margin-left:120px;
+            li{float:left;width:40px;height:36px;margin-left:5px;border:1px solid #ccc;background:$c5;text-align:center;line-height:36px;}
+            .active{background:$dc;color:#fff;}
         }
 
         //热销推荐

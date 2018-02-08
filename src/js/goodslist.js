@@ -9,35 +9,63 @@ require(['jquery','common'],function($){
     jQuery(function($){
     $('#ct_header').load('../html/header.html',function(){$(".tab2").css({display:'none'})});
     $('#ct_footer').load('../html/footer.html');});
-    goodlist=[];
-    //生成数据  id,name,price,qty,saleqty,category
-    categorys=["收纳","创意家居","清洁用品"];
-    for(var i=0;i<50;i++){
-        var obj={};
-        if(i)0000001,000050
-        if(i<10){
-            obj.id="00000"+i;  
-        }else{
-            obj.id="0000"+i;  
+    
+    //默认加载
+    $.ajax({
+        url:'../mysql/goods.php',
+        success:function(data){
+            var goods=JSON.parse(data);
+
+            //生成商品列表
+            var goodslist=jiexi(goods.data);
+            $(".goods").html(goodslist);
+
+            //当前分页
+            var nowpage=goods.page;
+
+            //生成页码
+            var maxpage=Math.ceil(goods.total/goods.qty);
+            for(var i=0;i<maxpage;i++){
+                var $li=$('<li/>');
+                $li.html(i+1);
+                $(".page").append($li);
+            }
+            //第一页高亮
+            $(".page li").first().addClass("active");
+
+            //点击对应页码加载
+            $(".page").on("mouseup",'li',function(e){
+                $.ajax({
+                    url:"../mysql/goods.php",
+                    data:{
+                        page:$(this).html(),
+                    },
+                    success:function(data){
+                        var newgoods=JSON.parse(data);
+                        $(".goods").html(jiexi(newgoods.data));
+                        $(".page .active").removeClass("active");
+                        $(e.target).addClass("active");                        
+                    }
+                })
+            })
+
         }
-        obj.name="美国·GNC葡萄籽浓缩精华胶囊100粒*4瓶--"+i;
-        obj.price=randomNumber(80,480);
-        obj.qty=100;
-        obj.saleqty=randomNumber(0,150);
-        obj.category=categorys[randomNumber(0,3)];
-        obj.imgurl="../images/good1.jpg";
-        goodlist.push(obj);
-    //     $.ajax({
-    //     url:"../mysql/creat.php",
-    //     data:{
-    //         data:JSON.stringify(obj),
-    //     },
-    //     success:function(data){
-    //         console.log(data);
-    //     }
-    // })
+    });
+    
+    //点击商品进入详情页
+    $(".goods").on('mouseup','li',function(){
+        location.href="../html/good.html?id="+$(this).attr("data-id");
+    })
+    
+    function jiexi(data){
+        return data.map(function(item){
+                return`<li data-id='${item.id}'>
+                                <img src='${item.imgurl}'/>
+                                <p>${item.name}</p>
+                                <p><span class="sale">￥${item.price}</span><del class="price">￥${item.price}</del></p>
+                                <p>月销<span class="yue">${item.saleqty}</span>件</p>
+                        </li>`;
+            }).join('');
     }
-    console.log(JSON.stringify(goodlist));
-    //数据库写入数据
     
 })

@@ -16,11 +16,11 @@
 
 .ct_main .l_box .small .hd ul li img { display: block; width: 64px; }
 
-.ct_main .l_box .big { float: right; position: relative; }
+.ct_main .l_box .big { height: 545px; float: right; position: relative; }
 
-.ct_main .l_box .big img { display: block; width: 460px; height: 460px; }
+.ct_main .l_box .big > img { display: block; width: 460px; height: 460px; }
 
-.ct_main .l_box .big span { height: 20px; line-height: 19px; padding-left: 26px; background: url(../images/icon_1.png) no-repeat 0 -59px; cursor: pointer; color: #666; position: absolute; bottom: -36px; left: 50%; margin-left: -27px; }
+.ct_main .l_box .big i { z-index: 1000; height: 20px; line-height: 19px; padding-left: 26px; background: url(../images/icon_1.png) no-repeat 0 -59px; cursor: pointer; color: #666; position: absolute; bottom: 36px; left: 50%; margin-left: -27px; }
 
 .ct_main .r_box { width: 550px; }
 
@@ -46,11 +46,11 @@
 
 .ct_main .r_box .buy b i { color: #DC0F50; }
 
-.ct_main .r_box .buy a { display: block; width: 15px; height: 20px; float: left; background: url("../images/jia_jian.png") no-repeat; }
-
 .ct_main .r_box .buy .add { background-position: 0 -20px; }
 
 .ct_main .r_box .buy span { border: 1px solid #d6d5d3; float: left; margin: 0 10px; }
+
+.ct_main .r_box .buy span i { display: block; width: 15px; height: 20px; float: left; background: url("../images/jia_jian.png") no-repeat; }
 
 .ct_main .r_box .buy input { width: 44px; padding: 0 5px; border-left: 1px solid #d6d5d3; float: left; text-align: center; line-height: 20px; height: 20px; color: #666; font-size: 12px; border-right: 1px solid #d6d5d3; }
 
@@ -58,7 +58,9 @@
 
 .ct_main .r_box .server span { display: block; float: left; padding-left: 25px; margin: 0px 0 8px 0; margin-right: 26px; background: url("http://image-family.huijiayou.cn/cfiles/staticfiles/upload/29cd6/85e5d25c92b84e659a9bb0f112aa060f.png") no-repeat left top; background-size: 20px auto; }
 
-.ct_main .r_box .btn a { display: inline-block; text-align: center; width: 160px; height: 38px; margin-right: 5px; font-size: 16px; line-height: 38px; color: #fff; }
+.ct_main .r_box .btn span { display: inline-block; text-align: center; width: 160px; height: 38px; margin-right: 5px; font-size: 16px; line-height: 38px; color: #fff; }
+
+.ct_main .r_box .btn span:hover { cursor: pointer; }
 
 .ct_main .r_box .btn #addcar { background: #fea829; }
 

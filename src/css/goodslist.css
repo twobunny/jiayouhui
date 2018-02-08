@@ -40,6 +40,8 @@
 
 .ct_main .goods li { float: left; margin-left: 20px; width: 214px; margin-bottom: 30px; }
 
+.ct_main .goods li:hover { cursor: pointer; }
+
 .ct_main .goods li img { width: 214px; }
 
 .ct_main .goods li p { font-size: 14px; }
@@ -49,6 +51,12 @@
 .ct_main .goods li .sale { font-size: 16px; color: #DC0F50; font-weight: bold; }
 
 .ct_main .goods li .price { float: right; color: #999; }
+
+.ct_main .page { margin-left: 120px; }
+
+.ct_main .page li { float: left; width: 40px; height: 36px; margin-left: 5px; border: 1px solid #ccc; background: #e5e5e5; text-align: center; line-height: 36px; }
+
+.ct_main .page .active { background: #DC0F50; color: #fff; }
 
 .ct_main .bestsale { position: absolute; right: 0; top: 0; width: 234px; background: url("../images/hd_bg.jpg") repeat-x left 45px; }
 

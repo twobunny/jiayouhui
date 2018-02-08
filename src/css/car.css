@@ -14,7 +14,7 @@
 
 .ct_main .container .car .goods td { text-align: center; }
 
-.ct_main .container .car .goods td img { width: 82px; margin-right: 10px; }
+.ct_main .container .car .goods td img { width: 82px; margin: 5px 10px; }
 
 .ct_main .container .car .goods td:first-child { padding-left: 22px; }
 

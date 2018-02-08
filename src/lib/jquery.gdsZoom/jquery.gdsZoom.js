@@ -4,7 +4,7 @@
 		var defaults = {
 			// 放大区域的宽高
 			width:400,
-			height:300,
+			height:400,
 
 			// 显示位置
 			position:'right',//left,top,bottom,right
@@ -30,9 +30,11 @@
 			// 获取/创建节点
 			// 绑定事件
 			function init(){
+
 				// 创建大图区域
 				var $big = $('<div/>').addClass('gds-zoom-big');
 
+				//大图区域尺寸
 				$big.css({
 					width:opt.width,
 					height:opt.height
@@ -41,7 +43,7 @@
 				// 大图位置
 				var left,top;
 				if(opt.position === 'right'){
-					left = $small.offset().left + $small.outerWidth() + opt.gap;
+					left = $small.outerWidth() + opt.gap;
 					top = $small.offset().top;
 				}else if(opt.position === 'left'){
 					left = $small.offset().left - opt.width - opt.gap;
@@ -63,11 +65,16 @@
 				// 创建大图
 				var $bigImg = $('<img/>').attr('src',$smallImg.attr('data-big') || $smallImg[0].src);
 
+				// $bigImg.css({
+				// 	width:opt.width,
+				// 	height:opt.height
+				// });
+				
 				// 大图写入$big
 				$bigImg.appendTo($big);
 
 				// 写入页面
-				$big.appendTo('body');
+				$big.appendTo($small);
 
 
 				// 创建放大镜
@@ -78,14 +85,17 @@
 				// 元素必须显示（且加载完成）才可以获取宽高
 				var ratio;
 
+
+				// 计算比例
+				ratio = $bigImg.outerWidth()/$smallImg.outerWidth();
+
 				// 鼠标移入移除
 				$small.on('mouseenter',function(){
 					$bigImg.attr('src',$smallImg.attr('data-big') || $smallImg[0].src);
 					$minzoom.show();
 					$big.show();
 					
-					// 计算比例
-					ratio = $bigImg.outerWidth()/$smallImg.outerWidth();
+					
 
 					// 设置放大镜的大小
 					// 与大图区域成比例
