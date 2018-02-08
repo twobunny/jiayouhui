@@ -8,6 +8,8 @@
 
 .ct_main .container ul li input[type=text] { border: 1px solid #DC0F50; width: 304px; height: 12px; padding: 14px 12px; margin-right: 14px; }
 
+.ct_main .container ul li input[type=password] { border: 1px solid #DC0F50; width: 304px; height: 12px; padding: 14px 12px; margin-right: 14px; }
+
 .ct_main .container ul li #imgcode, .ct_main .container ul li #code { width: 180px; border-color: #999; }
 
 .ct_main .container ul li #imgcode + i, .ct_main .container ul li #code + i { display: inline-block; width: 110px; background: #DC0F50; color: #fff; height: 40px; line-height: 40px; text-align: center; }

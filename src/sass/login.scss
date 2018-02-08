@@ -24,7 +24,7 @@ $c6:#666;
             //用户登录
             .form_user{padding-top:45px;
                 .tishi{/*display:none;*/font-size:$f12;color:$dc;height:40px;line-height:38px;padding-left:32px;background:url("../images/error_bg.png") no-repeat 9px 50%;}
-                input[type='text']{width:246px;height:40px;border:1px solid #ccc;padding-left:60px;background-position:$f12 center !important;margin-right:20px;}
+                .phone input,.password input{width:246px;height:40px;border:1px solid #ccc;padding-left:60px;background-position:$f12 center !important;margin-right:20px;}
                 i{display:inline-block;width: 20px;height: 20px;background:url("../images/correct_bg.png") no-repeat;}
                 #phone{margin-bottom:20px;background:url("../images/icon01.png") no-repeat;}
                 #password{background:url("../images/icon02.png") no-repeat;}

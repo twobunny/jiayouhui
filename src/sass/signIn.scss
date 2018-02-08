@@ -12,6 +12,7 @@ $c6:#666;
             li{margin-bottom:18px;font-size:$f12;
                 label{display:inline-block;width:160px;text-align:right;b{color:$dc;}font-size:$f14;color:$c6;margin-right:$f12;}
                 input[type=text]{border:1px solid $dc;width:304px;height:12px;padding:$f14 $f12;margin-right:$f14;}
+                input[type=password]{border:1px solid $dc;width:304px;height:12px;padding:$f14 $f12;margin-right:$f14;}
                 #imgcode,#code{width:180px;border-color:$c9;}
                 #imgcode+i,#code+i{display:inline-block;width:110px;background:$dc;color:#fff;height:40px;line-height:40px;text-align:center;}
                 input+span{background:url("../images/error_bg.png") no-repeat 5px center;padding:22px;color:$dc;} 
