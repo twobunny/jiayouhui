@@ -6,12 +6,17 @@ require.config({
     },
     shim:{
         'zoom':['jquery'],
+        'header':['jquery'],
     }
 })
 
-require(['jquery','zoom'],function($){
+require(['jquery','zoom','header','common'],function($){
     jQuery(function($){
-    $('#ct_header').load('../html/header.html',function(){$(".tab2").css({display:'none'})});
+    $('#ct_header').load('../html/header.html',function(){
+        addevent(true);
+        redcookie();
+
+    });
     $('#ct_footer').load('../html/footer.html',function(){$(".wouldlike").css({display:"none"})});
 
 
@@ -79,6 +84,26 @@ require(['jquery','zoom'],function($){
                     }
                 })
                 
+                //飞入购物车效果
+                var $img=$("<img/>").attr('src',obj.imgurl).appendTo('body').css({
+                    width:100,
+                    position:'absolute',
+                    left:'50%',
+                    top:'50%',
+                    opacity:0.4,
+                    'margin-left':'-150',
+                    'border-radius':'50%',
+                });
+                $img.animate({
+                    width: 40,
+                    top:63,
+                    'margin-left':480,
+                    },
+                    'slow',
+                    function() {
+                    $img.remove();
+                });
+
                 var exit=false;
                 //遍历购物车cookie
                 carlist.forEach(function(item){

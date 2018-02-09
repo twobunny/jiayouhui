@@ -15,20 +15,22 @@ $c5:#e5e5e5;
                 th:first-child{padding-left:22px;width:70px;}
                 tr{border-bottom:1px solid $c5;}
                 th:last-child{width:102px;}
-                td{text-align:center;img{width:82px;margin:5px 10px;}}
+                tbody{.active{background:#FFFCEB;}}
+                td{text-align:center;img{width:82px;margin:5px 10px;} a{cursor:pointer;}}
                 td:first-child{padding-left:22px;}
                 td:nth-child(2){width:90px;}
                 td:nth-child(3){text-align:left;}
                 .sum{color:$dc;}
                 .num{width:150px;
+
                     span{border:1px solid #d6d5d3;display:inline-block;}
-                    a{display:block;width: 15px;height:20px;float:left;}
+                    em{display:block;width: 15px;height:20px;float:left;&:hover{cursor:pointer;}}
                     input{width:44px;padding:0 5px;border-left:1px solid #d6d5d3;float:left;text-align:center;line-height:20px;height:20px;color:$c6;font-size:$f12;border-right:1px solid #d6d5d3;}
                     i{color:$dc;}}
                 }}
         .jiesuan{color:$c3;padding-top:22px;font-size:$f12;position:relative;height:52px;line-height:52px;position:relative;
             label{width:60px;}
-            #del{margin-left:20px;}
+            #del{margin-left:20px;cursor:pointer;}
             p{float:right;margin-right:140px;
                 span{font-size:18px;color:#ccc;display:inline-block;margin-top:15px;}
                 i{color:$dc;}

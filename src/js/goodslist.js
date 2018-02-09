@@ -2,12 +2,20 @@
 require.config({
     paths:{
         'jquery':"../lib/jquery-3.2.1",
+    },
+    shim:{
+        'header':['jquery'],
     }
 })
 
-require(['jquery','common'],function($){
+require(['jquery','common','header'],function($){
     jQuery(function($){
-    $('#ct_header').load('../html/header.html',function(){$(".tab2").css({display:'none'})});
+    $('#ct_header').load('../html/header.html',function(){
+        addevent(true);
+        redcookie();
+
+        $(".tab2").css({display:'none'});
+    });
     $('#ct_footer').load('../html/footer.html');});
     
     //默认加载

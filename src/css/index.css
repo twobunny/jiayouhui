@@ -1,3 +1,5 @@
+.tab2 { display: block !important; }
+
 #ct_main .container { color: #333; }
 
 #ct_main .container .rect { padding-left: 243px; margin-bottom: 45px; }
@@ -56,9 +58,9 @@
 
 #ct_main .flashs h2 span .t { background: #000; color: #fff; font-size: 16px; padding: 0 5px; }
 
-#ct_main .flashs .hd { overflow: hidden; position: relative; }
+#ct_main .flashs .hd { overflow: hidden; position: relative; height: 270px; }
 
-#ct_main .flashs .hd #cont2 { width: 10000%; height: 270px; padding: 0 25px; }
+#ct_main .flashs .hd #cont2 { width: 10000%; height: 270px; padding: 0 25px; position: absolute; left: 0; top: 0; }
 
 #ct_main .flashs .hd #cont2 li { width: 200px; margin: 0 22px 0 11px; float: left; position: relative; }
 

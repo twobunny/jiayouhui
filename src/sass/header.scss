@@ -5,22 +5,28 @@ $dc:#DC0F50;
 $c3:#333;
 $c6:#666;
 $c9:#999;
-
+$c5:#e5e5e5;
 #ct_header{
     border-bottom:2px solid $dc;
+     strong{
+        position:absolute;left:-75px;top:23px;z-index:1000;padding:$f14;padding-bottom:0;border:1px solid #E5E5E5;display:none;background:#fff;text-align:center;font-weight:normal;
+        i{position:absolute;display:block;width: 14px;height: 11px;background:url("../images/ware_list.png") no-repeat;top:-11px;right:50px;}
+        img{width: 121px;}
+        em{display:block;font-size:$f16;line-height:44px;color:$c3;}
+    }  
     .wrap-top{
         background: #E5E5E5;
         p{line-height: 30px;text-align:right;
             span{font-size:$f12;color:$c6;a{color:$dc;}margin:0 8px;}
             >a{color:$c6;margin:0 8px;font-size:$f12;
                 &:hover{text-decoration: underline;color:red;}
-                strong{
-                    position:absolute;left:-75px;top:23px;z-index:1000;padding:$f14;padding-bottom:0;border:1px solid #E5E5E5;display:none;background:#fff;text-align:center;font-weight:normal;
-                    i{position:absolute;display:block;width: 14px;height: 11px;background:url("../images/ware_list.png") no-repeat;top:-11px;right:50px;}
-                    img{width: 121px;}
-                    em{display:block;font-size:$f16;line-height:44px;color:$c3;}
+                // strong{
+                //     position:absolute;left:-75px;top:23px;z-index:1000;padding:$f14;padding-bottom:0;border:1px solid #E5E5E5;display:none;background:#fff;text-align:center;font-weight:normal;
+                //     i{position:absolute;display:block;width: 14px;height: 11px;background:url("../images/ware_list.png") no-repeat;top:-11px;right:50px;}
+                //     img{width: 121px;}
+                //     em{display:block;font-size:$f16;line-height:44px;color:$c3;}
 
-                }  
+                // }  
             }
             .ph{background:url("../images/iphone.png") no-repeat left center;padding-left:$f14;position:relative;&:hover strong{display:block;}}
             .we{background:url("../images/wx.png") no-repeat left center;padding-left:$f16;position:relative;&:hover strong{display:block;}} 
@@ -36,13 +42,13 @@ $c9:#999;
                 .active{color:$dc;}
             }
         }
-        .gou{display:block;float:right;margin-right:72px;border:1px solid #ccc;line-height:40px;padding-left:42px;width:80px;font-size:$f14;background:url("../images/car_icon.png") no-repeat 10px center;position:relative;color:$c3;&:hover+#mycar{display:block;}
+        .gou{display:inline-block;float:right;margin-right:72px;border:1px solid #ccc;line-height:40px;padding-left:42px;height:40px;width:80px;font-size:$f14;background:url("../images/car_icon.png") no-repeat 10px center;position:relative;color:$c3;cursor: pointer;&:hover #mycar{display:block;}
             .qty{display:block;background:$dc;border-radius:8px;width:18px;height:18px;position:absolute;right:-9px;top:-9px;font-size:12px;color:#fff;text-align:center;line-height:18px;}}
             #mycar{
-                position:absolute;right:72px;top:77px;background:#fff;border:1px solid #ccc;min-width:300px;display:none;&:hover{display:block;}
+                position:absolute;right:-8px;top:45px;background:#fff;border:1px solid #ccc;display:none;z-index:1000;width:240px;
+                ul{height:300px;overflow-x:hidden;li{border-bottom:1px solid $c5;padding:10px;font-size:12px;img{width:40px;float:left;}p{margin-left:50px;line-height:16px;}.item_name{height:32px;}}}
                 h2{height: 20px;line-height:20px;font-size:$f16;font-weight: bold;color:$c3;padding:10px;}
                 i{position:absolute;display:block;width: 14px;height: 11px;background:url("../images/ware_list.png") no-repeat;top:-11px;right:50px;}
-                ul{min-height:250px;}
                 div{background:#E5E5E5;padding:5px 12px;
                     p{display:inline-block;font-size:$f12;em{display:block;line-height:20px;}b{margin:0 3px;}}
                 span{margin-top:6px;background:$dc;a{color:#fff;display:inline-block;width:90px;height:30px;line-height:30px;font-size:$f14;text-align:center;}}}}
@@ -51,17 +57,28 @@ $c9:#999;
         .tab1{
             position:relative;
             >li{float:left;padding:0 16px 0 24px;
+                h2{background:$c3;height:40px;width: 232px;line-height:40px;color:#fff;margin-right:38px;text-indent:20px;font-weight:bold;font-size:$f14;&:hover .tab2{display:block;}}
                 .tab2{
                         // display:none;
+                        font-size:$f12;
+                        font-weight:normal;
                         width: 230px;height:560px;
                         border:1px solid #ccc;
                         border-top:none;
                         position:absolute;
                         top:42px;left:24px;
+                        z-index:1000;
+                        background:#fff;
                     li{
                         a{padding-left:20px;font-size:12px;display:block;line-height:40px;height:40px;&:hover{color:#fff;background:$dc;}}}}
-                h2{background:$c3;height:40px;width: 232px;line-height:40px;color:#fff;margin-right:38px;text-indent:20px;font-weight:bold;font-size:$f14;}
+
                 a{display:block;line-height:40px;height:40px;color:$c3;
                     &:hover{color:$dc;}}}}}
+
+    .r_nav{position:fixed;right:10px;top:50%;transform:translateY(-50%);
+        li{position:relative;background:url("../images/icon_bg.png") no-repeat;width:60px;height:60px;border-radius:50%;margin-bottom:10px;&:hover strong{display:block;}
+            strong{display:none;left:-160px;top:10px;width:130px;}
+            @for $i from 0 to 3{&:nth-child(#{$i+1}){background-position:0 -70px*$i;}}}
+         }
     } 
 

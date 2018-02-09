@@ -2,11 +2,14 @@
 require.config({
     paths:{
         'jquery':"../lib/jquery-3.2.1",
+    },
+    shim:{
+        'header':['jquery'],
     }
 })
-require(['jquery'],function($){
+require(['jquery','header'],function($){
     jQuery(function($){
-        $('#ct_header').load('../html/header.html',function(){$(".tab1").css({display:'none'})});
+        $('#ct_header').load('../html/header.html',function(){addevent(true);$(".tab1").css({display:'none'})});
         $('#ct_footer').load('../html/footer.html',function(){$(".wouldlike").css({display:'none'})});
         
         //初始提示框隐藏

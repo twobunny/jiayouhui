@@ -97,7 +97,7 @@ gulp.task('jt',function(){
     //     port:1003,
     //     files:['./src/**/*.html','./src/css/*.css']
     // })
-    gulp.watch("./src/sass/car.scss",['wcarSass'])
+    gulp.watch("./src/sass/header.scss",['wheaderSass'])
 })
 
 

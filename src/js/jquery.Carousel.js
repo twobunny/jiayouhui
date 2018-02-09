@@ -1,7 +1,7 @@
 ;(function($){
     $.fn.carousel = function(options){
         //这里的this指的是jquery实例
-        console.log(this);
+        // console.log(this);
         /*
             默认参数
                 *为了防止别人使用时,没有传入特定参数时提供默认值
@@ -37,7 +37,6 @@
 
 
         return this.each(function(){
-            console.log(this);
             //定义变量获取节点是 carousel
             var $this = $(this);
             

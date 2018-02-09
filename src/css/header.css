@@ -1,5 +1,13 @@
 #ct_header { border-bottom: 2px solid #DC0F50; }
 
+#ct_header strong { position: absolute; left: -75px; top: 23px; z-index: 1000; padding: 14px; padding-bottom: 0; border: 1px solid #E5E5E5; display: none; background: #fff; text-align: center; font-weight: normal; }
+
+#ct_header strong i { position: absolute; display: block; width: 14px; height: 11px; background: url("../images/ware_list.png") no-repeat; top: -11px; right: 50px; }
+
+#ct_header strong img { width: 121px; }
+
+#ct_header strong em { display: block; font-size: 16px; line-height: 44px; color: #333; }
+
 #ct_header .wrap-top { background: #E5E5E5; }
 
 #ct_header .wrap-top p { line-height: 30px; text-align: right; }
@@ -11,14 +19,6 @@
 #ct_header .wrap-top p > a { color: #666; margin: 0 8px; font-size: 12px; }
 
 #ct_header .wrap-top p > a:hover { text-decoration: underline; color: red; }
-
-#ct_header .wrap-top p > a strong { position: absolute; left: -75px; top: 23px; z-index: 1000; padding: 14px; padding-bottom: 0; border: 1px solid #E5E5E5; display: none; background: #fff; text-align: center; font-weight: normal; }
-
-#ct_header .wrap-top p > a strong i { position: absolute; display: block; width: 14px; height: 11px; background: url("../images/ware_list.png") no-repeat; top: -11px; right: 50px; }
-
-#ct_header .wrap-top p > a strong img { width: 121px; }
-
-#ct_header .wrap-top p > a strong em { display: block; font-size: 16px; line-height: 44px; color: #333; }
 
 #ct_header .wrap-top p .ph { background: url("../images/iphone.png") no-repeat left center; padding-left: 14px; position: relative; }
 
@@ -46,21 +46,27 @@
 
 #ct_header .top .form p .active { color: #DC0F50; }
 
-#ct_header .top .gou { display: block; float: right; margin-right: 72px; border: 1px solid #ccc; line-height: 40px; padding-left: 42px; width: 80px; font-size: 14px; background: url("../images/car_icon.png") no-repeat 10px center; position: relative; color: #333; }
+#ct_header .top .gou { display: inline-block; float: right; margin-right: 72px; border: 1px solid #ccc; line-height: 40px; padding-left: 42px; height: 40px; width: 80px; font-size: 14px; background: url("../images/car_icon.png") no-repeat 10px center; position: relative; color: #333; cursor: pointer; }
 
-#ct_header .top .gou:hover + #mycar { display: block; }
+#ct_header .top .gou:hover #mycar { display: block; }
 
 #ct_header .top .gou .qty { display: block; background: #DC0F50; border-radius: 8px; width: 18px; height: 18px; position: absolute; right: -9px; top: -9px; font-size: 12px; color: #fff; text-align: center; line-height: 18px; }
 
-#ct_header .top #mycar { position: absolute; right: 72px; top: 77px; background: #fff; border: 1px solid #ccc; min-width: 300px; display: none; }
+#ct_header .top #mycar { position: absolute; right: -8px; top: 45px; background: #fff; border: 1px solid #ccc; display: none; z-index: 1000; width: 240px; }
 
-#ct_header .top #mycar:hover { display: block; }
+#ct_header .top #mycar ul { height: 300px; overflow-x: hidden; }
+
+#ct_header .top #mycar ul li { border-bottom: 1px solid #e5e5e5; padding: 10px; font-size: 12px; }
+
+#ct_header .top #mycar ul li img { width: 40px; float: left; }
+
+#ct_header .top #mycar ul li p { margin-left: 50px; line-height: 16px; }
+
+#ct_header .top #mycar ul li .item_name { height: 32px; }
 
 #ct_header .top #mycar h2 { height: 20px; line-height: 20px; font-size: 16px; font-weight: bold; color: #333; padding: 10px; }
 
 #ct_header .top #mycar i { position: absolute; display: block; width: 14px; height: 11px; background: url("../images/ware_list.png") no-repeat; top: -11px; right: 50px; }
-
-#ct_header .top #mycar ul { min-height: 250px; }
 
 #ct_header .top #mycar div { background: #E5E5E5; padding: 5px 12px; }
 
@@ -78,18 +84,32 @@
 
 #ct_header .ct_nav .tab1 { position: relative; }
 
-#ct_header .ct_nav .tab1 > li:first-child { padding-left: 0; }
-
 #ct_header .ct_nav .tab1 > li { float: left; padding: 0 16px 0 24px; }
 
-#ct_header .ct_nav .tab1 > li .tab2 { width: 230px; height: 560px; border: 1px solid #ccc; border-top: none; position: absolute; top: 44px; left: 0; }
+#ct_header .ct_nav .tab1 > li h2 { background: #333; height: 40px; width: 232px; line-height: 40px; color: #fff; margin-right: 38px; text-indent: 20px; font-weight: bold; font-size: 14px; }
+
+#ct_header .ct_nav .tab1 > li h2:hover .tab2 { display: block; }
+
+#ct_header .ct_nav .tab1 > li .tab2 { font-size: 12px; font-weight: normal; width: 230px; height: 560px; border: 1px solid #ccc; border-top: none; position: absolute; top: 42px; left: 24px; z-index: 1000; background: #fff; }
 
 #ct_header .ct_nav .tab1 > li .tab2 li a { padding-left: 20px; font-size: 12px; display: block; line-height: 40px; height: 40px; }
 
 #ct_header .ct_nav .tab1 > li .tab2 li a:hover { color: #fff; background: #DC0F50; }
 
-#ct_header .ct_nav .tab1 > li h2 { background: #333; height: 40px; width: 232px; line-height: 40px; color: #fff; margin-right: 38px; text-indent: 20px; font-weight: bold; font-size: 14px; }
-
 #ct_header .ct_nav .tab1 > li a { display: block; line-height: 40px; height: 40px; color: #333; }
 
 #ct_header .ct_nav .tab1 > li a:hover { color: #DC0F50; }
+
+#ct_header .r_nav { position: fixed; right: 10px; top: 50%; transform: translateY(-50%); }
+
+#ct_header .r_nav li { position: relative; background: url("../images/icon_bg.png") no-repeat; width: 60px; height: 60px; border-radius: 50%; margin-bottom: 10px; }
+
+#ct_header .r_nav li:hover strong { display: block; }
+
+#ct_header .r_nav li strong { display: none; left: -160px; top: 10px; width: 130px; }
+
+#ct_header .r_nav li:nth-child(1) { background-position: 0 0px; }
+
+#ct_header .r_nav li:nth-child(2) { background-position: 0 -70px; }
+
+#ct_header .r_nav li:nth-child(3) { background-position: 0 -140px; }

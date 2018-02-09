@@ -2,12 +2,15 @@
 require.config({
     paths:{
         'jquery':"../lib/jquery-3.2.1",
+    },
+    shim:{
+        'header':['jquery'],
     }
 })
 
-require(['jquery','common'],function($){
+require(['jquery','common','header'],function($){
     jQuery(function($){
-        $('#ct_header').load('../html/header.html',function(){$(".tab1").css({display:'none'})});
+        $('#ct_header').load('../html/header.html',function(){addevent();$(".tab1").css({display:'none'})});
         $('#ct_footer').load('../html/footer.html',function(){$(".wouldlike").css({display:'none'})});
         $('input[type=text]').nextAll('span').css({visibility:'hidden'});
         $('input[type=password]').nextAll('span').css({visibility:'hidden'});
@@ -61,16 +64,13 @@ require(['jquery','common'],function($){
             $('#code').val(randomNumber(1000,9999));
          });
          
-         //同一个事件源触发两次事件
-         $('#red').on('change',function(e){
-            e.preventDefault();
-            console.log(e.target)
+
+         $('#red').on('click',function(){
             if($(this).prop("checked")===true){
                 $("#btn_sign").prop({"disabled":false});
             }else{
-                $("#btn_sign").prop({"disabled":false});
+                $("#btn_sign").prop({"disabled":true});
             }
-            return false;
          });
 
          $("#btn_sign").on('mouseup',function(){

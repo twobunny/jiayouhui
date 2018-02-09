@@ -12,9 +12,13 @@
 
 .ct_main .container .car .goods th:last-child { width: 102px; }
 
+.ct_main .container .car .goods tbody .active { background: #FFFCEB; }
+
 .ct_main .container .car .goods td { text-align: center; }
 
 .ct_main .container .car .goods td img { width: 82px; margin: 5px 10px; }
+
+.ct_main .container .car .goods td a { cursor: pointer; }
 
 .ct_main .container .car .goods td:first-child { padding-left: 22px; }
 
@@ -28,7 +32,9 @@
 
 .ct_main .container .car .goods .num span { border: 1px solid #d6d5d3; display: inline-block; }
 
-.ct_main .container .car .goods .num a { display: block; width: 15px; height: 20px; float: left; }
+.ct_main .container .car .goods .num em { display: block; width: 15px; height: 20px; float: left; }
+
+.ct_main .container .car .goods .num em:hover { cursor: pointer; }
 
 .ct_main .container .car .goods .num input { width: 44px; padding: 0 5px; border-left: 1px solid #d6d5d3; float: left; text-align: center; line-height: 20px; height: 20px; color: #666; font-size: 12px; border-right: 1px solid #d6d5d3; }
 
@@ -38,7 +44,7 @@
 
 .ct_main .container .jiesuan label { width: 60px; }
 
-.ct_main .container .jiesuan #del { margin-left: 20px; }
+.ct_main .container .jiesuan #del { margin-left: 20px; cursor: pointer; }
 
 .ct_main .container .jiesuan p { float: right; margin-right: 140px; }
 
