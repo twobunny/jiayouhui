@@ -1,0 +1,60 @@
+page.js
+
+首页
+引用模块
+配置参数
+定义模块
+
+
+用jQuery开发(jQuery开发==>jQuery（）{})
+不用jQuery开发 （function($){})(jQuery);
+
+列表
+
+详情
+
+购物车--》支付页面
+
+注册--》
+
+登录---》忘记密码
+
+requirejs：
+实现js记载js
+把文件当做一个模块
+执行步骤：require.js加载完成后，接着加载并执行data-main中的模块
+
+html中srcipt中写data-main：
+js中home依赖的模块文件（）
+	//baseUrl(基础路径，基于基础路径的模块不需要后缀名，写后缀基于html文件) 
+		默认是html所在的目录 
+		data-mian后的js文件：主模块所在的目录
+		配置：执行基础路径
+	api：
+		require(Dependencies,callback)	依赖的模块，文件可以是多个（为标准模块，才能在callback参数中引用）
+						回调函数，依赖模块加载完成后执行
+	require(['']，function（）{	})
+
+
+添加别名，配置参数
+require.comfig({
+	//baseUrl:
+		//设置别名（虚拟路径）
+	paths:{
+		'jQuery':jQuery的路径，不加后缀
+		'zoom'：同上
+	}
+	shim:{	
+		'zoom':['jQuery']	//zoom依赖jQuery
+		deps:[ ]
+		exports
+		}
+})
+require(['jQuery','zoom','common'],function($){	//引用别名
+//这里的代码是在所有的模块加载完成后执行，但不保证模块的加载顺序(能通过shim设置依赖)
+
+ })
+
+标准模块才能够在回调函数里面引用
+
+define定义模块
